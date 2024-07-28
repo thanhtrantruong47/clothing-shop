@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import stylesUtils from '../../styles/modules/stylesUtils.module.css';
 import styles from './breadcrumbs.module.css';
+import { memo } from 'react';
 
 interface BreadcrumbProps {
   listItems: {
@@ -34,4 +35,4 @@ const Breadcrumb = ({ listItems }: BreadcrumbProps) => {
   );
 };
 
-export default Breadcrumb;
+export default memo(Breadcrumb);

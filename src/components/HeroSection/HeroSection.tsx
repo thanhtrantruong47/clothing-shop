@@ -3,6 +3,7 @@ import HeroCarousel from '../HeroCarousel/HeroCarousel';
 import styles from './heroSection.module.css';
 import stylesUtils from '../../styles/modules/stylesUtils.module.css';
 import { BANNER_IMAGES } from '../../constants';
+import { memo } from 'react';
 
 const HeroSection = () => {
   return (
@@ -26,4 +27,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default memo(HeroSection);

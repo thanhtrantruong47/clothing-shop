@@ -3,7 +3,7 @@ import stylesUtils from '../../styles/modules/stylesUtils.module.css';
 import NumberInput from '../NumberInput/NumberInput';
 import DeleteIcon from '../Icon/DeleteIcon';
 import Button from '../Button/Button';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import unAvailableImage from '../../assets/images/no-image.jpg';
 
 interface CartItemProps {
@@ -31,10 +31,13 @@ const CartItem = ({
 }: CartItemProps) => {
   const [amountOfProduct, setAmountOfProduct] = useState<number>(quantity);
 
-  const handleQuantityChange = (newQuantity: number) => {
-    setAmountOfProduct(newQuantity);
-    onQuantityChange(id, newQuantity);
-  };
+  const handleQuantityChange = useCallback(
+    (newQuantity: number) => {
+      setAmountOfProduct(newQuantity);
+      onQuantityChange(id, newQuantity);
+    },
+    [id, onQuantityChange]
+  );
 
   return (
     <div className={styles.container}>

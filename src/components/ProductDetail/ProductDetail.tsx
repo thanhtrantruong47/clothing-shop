@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import styles from './productDetail.module.css';
 import stylesUtils from '../../styles/modules/stylesUtils.module.css';
 import StarIcon from '../Icon/StarIcon';
@@ -72,7 +72,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
     addToast(MESSAGE_SUCCESS.ADD_TO_CART, true); // Show success toast
   };
 
-  const breadcrumbItems = [...BREADCRUMB_ITEMS_DETAIl, { label: title }];
+  const breadcrumbItems = useMemo(() => [...BREADCRUMB_ITEMS_DETAIl, { label: title }], [title]);
 
   return (
     <div className={`${stylesUtils.container} ${styles.wrapper}`}>

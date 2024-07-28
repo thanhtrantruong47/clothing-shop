@@ -10,6 +10,7 @@ import styles from './header.module.css';
 import stylesUtils from '../../styles/modules/stylesUtils.module.css';
 import { Link } from 'react-router-dom';
 import { useCart } from '../../hook/CartContext';
+import { memo } from 'react';
 
 const Header = () => {
   const { productsInCart } = useCart();
@@ -42,4 +43,5 @@ const Header = () => {
     </header>
   );
 };
-export default Header;
+
+export default memo(Header);

@@ -8,6 +8,7 @@ import TwitterIcon from '../Icon/TwitterIcon';
 import InIcon from '../Icon/InIcon';
 import FaceBookIcon from '../Icon/FaceBookIcon';
 import stylesUtils from '../../styles/modules/stylesUtils.module.css';
+import { memo } from 'react';
 
 const Footer = () => {
   return (
@@ -54,4 +55,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);

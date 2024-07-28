@@ -1,4 +1,4 @@
-import { ChangeEvent } from 'react';
+import { ChangeEvent, memo } from 'react';
 import styles from './numberInput.module.css';
 import PlusIcon from '../Icon/PlusIcon';
 import MinusIcon from '../Icon/MinusIcon';
@@ -35,4 +35,4 @@ const NumberInput = ({ value, onChange }: NumberInputProps) => {
   );
 };
 
-export default NumberInput;
+export default memo(NumberInput);

@@ -10,24 +10,26 @@ interface ProductListProps {
   hasMore: boolean; // New prop to indicate if there are more products
 }
 
-const ProductList = ({ products, onClick, hasMore }: ProductListProps) => (
-  <div className={`${stylesUtils.container} ${styles.wrapper}`}>
-    <div className={styles.list}>
-      {products.map(({ id, title, price, description, rate, numberRating, images }) => (
-        <ProductCard
-          key={id}
-          id={id}
-          title={title}
-          description={description || ''}
-          image={images ? images[0] : ''}
-          numberRating={numberRating || 0}
-          price={price}
-          rate={rate || 0}
-        />
-      ))}
+const ProductList = ({ products, onClick, hasMore }: ProductListProps) => {
+  return (
+    <div className={`${stylesUtils.container} ${styles.wrapper}`}>
+      <div className={styles.list}>
+        {products.map(({ id, title, price, description, rate, numberRating, images }) => (
+          <ProductCard
+            key={id}
+            id={id}
+            title={title}
+            description={description || ''}
+            image={images ? images[0] : ''}
+            numberRating={numberRating || 0}
+            price={price}
+            rate={rate || 0}
+          />
+        ))}
+      </div>
+      <Button classStyle={styles.btn} content="See More" onClick={onClick} disabled={!hasMore} />
     </div>
-    <Button classStyle={styles.btn} content="See More" onClick={onClick} disabled={!hasMore} />
-  </div>
-);
+  );
+};
 
 export default ProductList;
