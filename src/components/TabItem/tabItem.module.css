@@ -1,0 +1,23 @@
+.tab {
+  font-family: Mada;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-action);
+  cursor: pointer;
+  position: relative;
+}
+
+.active {
+  color: var(--color-text-active);
+  font-weight: var(--font-weight-bold);
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%;
+  height: 0.125rem;
+  background-color: var(--color-text-active);
+}

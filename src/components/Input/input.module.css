@@ -1,0 +1,13 @@
+.searchInput {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: var(--border-lg) solid var(--color-text-product);
+  border-radius: var(--border-radius);
+  width: 100%;
+  min-width: 12.5rem;
+}
+
+.searchInput::placeholder {
+  color: var(--color-disable);
+  font-size: var(--font-size-md);
+}

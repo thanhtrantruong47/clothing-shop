@@ -1,0 +1,95 @@
+.container {
+  display: grid;
+  background-color: var(--color-bg);
+  padding: 2.5rem;
+  gap: 2.875rem; /* 46px */
+  font-family: Mada;
+}
+
+.title,
+.mainTitle {
+  font-size: var(--font-size-nm);
+  font-weight: var(--font-weight-bold);
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  max-width: 8.875rem;
+}
+
+.desc {
+  font-size: var(--font-size-md);
+  color: var(--color-text-product);
+}
+
+.image {
+  width: 100%;
+  max-width: 5rem; /* 80px */
+  height: 5rem; /* 80px */
+}
+
+.group {
+  justify-content: space-between;
+}
+
+.groupImage {
+  gap: 2.5rem;
+  margin-right: 1rem;
+}
+
+.info {
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+.option {
+  display: grid;
+  height: 3.875rem; /* 62px */
+}
+
+.quantity {
+  justify-content: flex-end;
+}
+
+.button {
+  color: var(--color-text-primary);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+.button:hover {
+  color: var(--color-badge);
+}
+
+@media (max-width: 1200px) {
+  .group {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .groupImage {
+    width: 100%;
+  }
+
+  .mainTitle {
+    overflow: hidden;
+    max-width: none;
+    max-height: 3rem;
+    white-space: normal;
+    overflow: hidden; /* Hide any overflow by default */
+    max-width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,10 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+trim_trailing_whitespace = true
+indent_size = 2
+quote_type = single

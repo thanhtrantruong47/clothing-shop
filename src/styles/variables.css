@@ -1,0 +1,55 @@
+:root {
+  /* Font Sizes */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1.125rem; /* 18px */
+  --font-size-nm: 1.5rem; /* 24px */
+  --font-size-2nm: 1.875rem; /* 30px */
+  --font-size-lg: 2.25rem; /* 36px */
+  --font-size-xl: 2.5rem; /* 40px */
+  --font-size-2xl: 3rem; /* 48px */
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Color Palette */
+  --color-primary: #7d89ff;
+  --color-secondary: #ab40ff;
+  --color-gradient: linear-gradient(#7d89ff, #ab40ff);
+  --color-text-active: #5463ff;
+  --color-text-primary: #0d1222;
+  --color-text-secondary: #ffffff;
+  --color-action: #646464;
+  --color-text-product: #969696;
+  --color-bg: #f4f4f4;
+  --color-disable: #dddddd;
+  --color-badge: #ef8484;
+  --color-selected: rgba(0, 0, 0, 0.5);
+
+  /* Box shadow */
+  --shadow-sm: rgba(0, 0, 0, 0.05);
+  --shadow-md: rgba(0, 0, 0, 0.1);
+  --shadow-lg: rgba(0, 0, 0, 0.15);
+
+  /* Border */
+  --border-sm: 0.0625rem; /* 1px */
+  --border-lg: 0.09375rem; /* 1.5px */
+  --border-xl: 0.125rem; /* 2px */
+
+  /* Border radius */
+  --border-radius: 0.625rem; /* 10px */
+
+  /* Line height */
+  --line-height-sm: 1.2rem; /* 19.2px */
+  --line-height-md: 1.5rem; /* 24px */
+  --line-height-lg: 1.875rem; /* 30px */
+  --line-height-xl: 4.6875rem; /* 75px */
+
+  /* Icon size */
+  --icon-sm: 1.125rem; /* 18px */
+  --icon-md: 1.5rem; /* 24px */
+  --icon-lg: 2rem; /* 32px */
+
+  /* screen  */
+  --table-screen: 768px;
+}

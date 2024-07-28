@@ -1,0 +1,76 @@
+.heroCarousel {
+  position: relative;
+  max-width: 25rem;
+  height: 32.625rem;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  min-width: 25rem;
+  border-radius: 5rem 5rem 5rem 0; /* 80px converted to rem */
+  border: 0.625rem solid var(--color-text-secondary); /* 10px converted to rem */
+  aspect-ratio: 400/ 522;
+}
+
+.thumbnailList {
+  display: flex;
+  position: absolute;
+  bottom: 1.5rem; /* 24px converted to rem */
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-selected);
+  width: 18.125rem; /* 290px converted to rem */
+  height: 5rem; /* 80px converted to rem */
+}
+
+.thumbnail {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.thumbnailList img {
+  cursor: pointer;
+  width: 5rem; /* 80px converted to rem */
+  height: 5rem; /* 80px converted to rem */
+  padding: 0.625rem; /* 10px converted to rem */
+}
+
+.thumbnailList img.active {
+  padding: 0;
+}
+
+.thumbnailList button {
+  background: var(--color-text-active);
+  cursor: pointer;
+  width: 1.5rem; /* 24px converted to rem */
+  height: 1.5rem; /* 24px converted to rem */
+  position: absolute;
+  z-index: 1;
+  padding: 0.1875rem;
+  border: none;
+}
+
+.buttonLeft {
+  position: absolute;
+  top: 50%;
+  left: -0.75rem;
+  transform: translateY(-50%);
+  align-items: center;
+}
+
+.buttonRight {
+  position: absolute;
+  right: -0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 600px) {
+  .mainImage {
+    min-width: 22rem;
+  }
+}

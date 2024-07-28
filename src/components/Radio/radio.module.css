@@ -1,0 +1,30 @@
+.colorRadio {
+  display: none;
+}
+
+.listColor {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.colorCircle {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.colorRadio:checked + .colorOption > .colorCircle::before {
+  content: '';
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--circle-background);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

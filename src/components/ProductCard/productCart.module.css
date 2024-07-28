@@ -1,0 +1,101 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: var(--font-size-sm);
+  font-family: Poppins;
+  width: 16.5625rem;
+  box-shadow:
+    0 0.25rem 0.5rem 0 var(--shadow-sm),
+    0 0.375rem 1.25rem 0 var(--shadow-sm);
+  height: 22.875rem;
+}
+
+.product img {
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-0.5rem);
+}
+
+.bookMark {
+  display: none;
+  gap: 1rem;
+  height: 3.5rem;
+  background-color: var(--color-selected);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  justify-content: flex-end;
+  box-shadow: 0 0.25rem 0.5rem var(--shadow-lg);
+}
+
+.bookMark > button {
+  background-color: var(--shadow-sm);
+  color: var(--color-text-secondary);
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.product:hover {
+  box-shadow:
+    0 0.25rem 0.5rem 0 var(--shadow-lg),
+    0 0.375rem 1.25rem 0 var(--shadow-lg);
+}
+
+.imageGroup {
+  width: 100%;
+  height: 15.5rem;
+}
+
+.imageGroup:hover > div {
+  display: flex;
+}
+
+.productImage {
+  width: 16.5625rem;
+  height: 100%;
+  object-fit: contain;
+  background-color: var(--color-bg);
+}
+
+.group {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.nameGroup {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-bold);
+  justify-content: space-between;
+  margin-bottom: 0.3125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+
+.nameGroup > span {
+  font-family: Signika;
+}
+
+.desc {
+  color: var(--color-text-product);
+  margin-bottom: 0.8125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+
+.ratingGroup {
+  gap: 0.5625rem;
+  color: var(--color-text-product);
+  font-family: Signika;
+}
+
+.numberRating {
+  gap: 0.25rem;
+}

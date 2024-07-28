@@ -1,0 +1,64 @@
+.fluidContainer {
+  background-color: #393e46;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-secondary);
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.groupLogo {
+  display: flex;
+  max-width: 26.6875rem;
+  flex-direction: column;
+  gap: 1.5rem; /* 24px in rem */
+}
+
+.logo {
+  font-family: Roboto;
+  font-size: var(--font-size-sm);
+  fill: var(--color-text-secondary);
+}
+
+.desc {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-md);
+}
+
+.group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 181px;
+  gap: 5rem; /* 80px in rem */
+}
+
+.groupIcon {
+  display: flex;
+  gap: 1rem;
+}
+
+.groupIcon a {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 64rem) {
+  .footer {
+    flex-direction: column;
+    gap: 1.25rem; /* 20px in rem */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .groupLogo {
+    max-width: 100%;
+  }
+
+  .group {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem; /* 20px in rem */
+    row-gap: 4rem;
+  }
+}

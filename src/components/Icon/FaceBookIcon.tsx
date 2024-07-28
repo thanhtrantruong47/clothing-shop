@@ -1,0 +1,18 @@
+const FaceBookIcon = () => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+    <rect x="0.5" y="0.5" width="31" height="31" stroke="currentColor" />
+    <g clipPath="url(#clip0_228_77)">
+      <path
+        d="M13.7869 23V16.4308H12V14.0656H13.7869V12.0454C13.7869 10.4578 14.8425 9 17.2747 9C18.2595 9 18.9877 9.09177 18.9877 9.09177L18.9303 11.3005C18.9303 11.3005 18.1876 11.2935 17.3772 11.2935C16.5002 11.2935 16.3596 11.6864 16.3596 12.3385V14.0656H19L18.8851 16.4308H16.3596V23H13.7869Z"
+        fill="currentColor"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_228_77">
+        <rect width="7" height="14" fill="white" transform="translate(12 9)" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export default FaceBookIcon;

@@ -1,0 +1,45 @@
+.container {
+  background-color: var(--color-bg);
+  max-width: 23.625rem; /* 378px / 16 */
+  padding: 2.625rem 1.5rem 2.25rem 1.5rem; /* 42px, 24px, 36px, 24px */
+  font-size: var(--font-size-md);
+  font-family: Mada;
+  height: 15.31rem;
+}
+
+.product {
+  color: var(--color-text-product);
+  padding-bottom: 1.5rem; /* 24px */
+  border-bottom: var(--border-xl) dotted var(--color-disable);
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-primary);
+  padding: 1.5rem 0; /* 24px */
+}
+
+.desc {
+  font-weight: var(--font-weight-bold);
+}
+
+.group {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.button {
+  font-family: Poppins;
+  background: var(--color-gradient);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-bold);
+  padding: 0.65625rem 2.8125rem; /* 10.5px, 45px */
+}
+
+.button:hover {
+  box-shadow:
+    0 0.25rem 0.5rem 0 var(--shadow-lg),
+    0 0.375rem 1.25rem 0 var(--shadow-lg);
+}

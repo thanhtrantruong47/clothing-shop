@@ -1,0 +1,15 @@
+.product {
+  margin-bottom: 6.375rem; /* 102px / 16 */
+}
+
+.list {
+  margin-bottom: 6.375rem; /* 102px / 16 */
+}
+
+.title {
+  font-family: Mada;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin-bottom: 2.5rem; /* 40px / 16 */
+}

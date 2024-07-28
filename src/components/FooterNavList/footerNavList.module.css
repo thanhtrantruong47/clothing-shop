@@ -1,0 +1,24 @@
+.container {
+  color: var(--color-text-secondary);
+  font-family: Poppins;
+  font-size: var(--font-size-md);
+}
+
+.title {
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1.5rem;
+}
+
+.item {
+  display: grid;
+  width: max-content;
+  font-size: var(--font-size-sm);
+  gap: 0.6875rem;
+  margin-bottom: 0.6875rem;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+}
+

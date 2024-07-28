@@ -1,0 +1,55 @@
+.fluidContainer {
+  box-shadow:
+    0 0.15625rem 0.3125rem 0 var(--shadow-lg),
+    0 0.234375rem 0.78125rem 0 var(--shadow-lg);
+}
+
+.header {
+  gap: 0.8125rem;
+  padding: 17px 0 15px;
+}
+
+.badge {
+  position: relative;
+  display: inline-block;
+}
+
+.badgeNumber {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color-badge);
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+}
+
+.group {
+  gap: 2.5rem;
+  margin-left: auto;
+  float: right;
+}
+
+.groupIcon {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.groupIcon a {
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 1.0625rem 1rem;
+  }
+
+  .groupInput {
+    display: none;
+  }
+}

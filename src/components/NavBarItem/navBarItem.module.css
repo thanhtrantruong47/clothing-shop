@@ -1,0 +1,27 @@
+.navBarItem {
+  list-style-type: none;
+  font-family: Mada;
+  position: relative;
+  width: max-content;
+}
+
+.active {
+  font-weight: var(--font-weight-bold);
+}
+
+.activeLink {
+  color: var(--color-text-active);
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  width: 0.25rem; /* 4px / 16px = 0.25rem */
+  height: 0.25rem; /* 4px / 16px = 0.25rem */
+  background-color: var(--color-text-active);
+  border-radius: 50%;
+}

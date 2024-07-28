@@ -1,0 +1,34 @@
+.section {
+  margin-top: 3.125rem;
+  margin-bottom: 5rem;
+}
+
+.head {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+}
+
+.head h2 {
+  font-family: Mada;
+  font-size: var(--font-size-2xl);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-bold);
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.head h3 {
+  font-family: Poppins;
+  font-size: var(--font-size-2nm);
+  color: var(--color-text-active);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.noProducts {
+  font-family: Poppins;
+  font-size: var(--font-size-2nm);
+  text-transform: uppercase;
+}
